@@ -53,6 +53,8 @@ public class ProjectileHayball : MonoBehaviour
         transform.rotation = LookAtTarget(movePosition - transform.position);
         transform.position = movePosition;
 
+        
+
         //if(transform.position == target.transform.position)
         //{        
         //    Destroy(gameObject);

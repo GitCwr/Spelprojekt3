@@ -10,7 +10,7 @@ public class Catapult : MonoBehaviour
     public Transform enemy;
 
     public float attackRange;
-    public float attackRate = 2f;
+    public float attackRate = 1f;
     float nextAttackTime = 0f;
 
     bool Detected = false;
