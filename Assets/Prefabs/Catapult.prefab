@@ -100,7 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4125938853594114313}
+  castPoint: {fileID: 5513527518315560670}
   ProjectileHayball: {fileID: 2263435365391183560, guid: 0255d5fa0b2ea034eaaa5f5f90b25e21, type: 3}
+  enemy: {fileID: 6178048464525877400, guid: ac600a9270f986e43a3a32af15209bca, type: 3}
+  attackRange: 100
   attackRate: 2
 --- !u!1 &4113099938019293031
 GameObject:

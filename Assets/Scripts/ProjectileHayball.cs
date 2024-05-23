@@ -9,6 +9,7 @@ public class ProjectileHayball : MonoBehaviour
     public GameObject target;
     
     public float speed = 10f;
+    public int damage = 20;
 
     private float towerX;
     private float targetX;
@@ -26,6 +27,18 @@ public class ProjectileHayball : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    private void OnTriggerEnter2D(Collider2D hitInfo)
+    {
+        Enemy enemy = hitInfo.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        
+    }
+
     void Update()
     {
         towerX = tower.transform.position.x;
@@ -40,11 +53,14 @@ public class ProjectileHayball : MonoBehaviour
         transform.rotation = LookAtTarget(movePosition - transform.position);
         transform.position = movePosition;
 
-        if(transform.position == target.transform.position)
-        {
-            Destroy(gameObject);
-        }
+        //if(transform.position == target.transform.position)
+        //{        
+        //    Destroy(gameObject);
+       // }
     }
+
+    
+
 
     public static Quaternion LookAtTarget(Vector2 rotation)
     {

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7842681088955861306}
   - component: {fileID: 4353882328083440963}
   - component: {fileID: 984294536575568060}
+  - component: {fileID: 8616169640707882999}
   m_Layer: 0
   m_Name: ProjectileHayball
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2263435365391183560}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.41, y: -1.64, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -97,6 +98,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2a75bdff4f99a43ac5dc44ee44721d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower: {fileID: 0}
-  target: {fileID: 0}
+  tower: {fileID: 2455234102137599678, guid: adad320d88698204c8310ab9013cec32, type: 3}
+  target: {fileID: 2954211366448840290, guid: ac600a9270f986e43a3a32af15209bca, type: 3}
   speed: 10
+  damage: 100
+--- !u!58 &8616169640707882999
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2263435365391183560}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.01, y: -0.01}
+  serializedVersion: 2
+  m_Radius: 0.09
