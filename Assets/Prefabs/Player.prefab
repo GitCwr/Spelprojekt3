@@ -80,6 +80,8 @@ GameObject:
   - component: {fileID: 5222245713734621967}
   - component: {fileID: 2591566929145356788}
   - component: {fileID: 3352348855862228089}
+  - component: {fileID: 6250520512770438904}
+  - component: {fileID: 4873287875981400127}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -348,6 +350,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6250520512770438904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208112797483548625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c382b4bd02d47a849bc57798d4175d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Resources>k__BackingField:
+    m_keys: []
+    m_values: 
+--- !u!114 &4873287875981400127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6208112797483548625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ab5e50d5f608c44b45b5ada6fab405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Inventory>k__BackingField: {fileID: 6250520512770438904}
 --- !u!1 &7399978787534714966
 GameObject:
   m_ObjectHideFlags: 0

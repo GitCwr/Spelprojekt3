@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PickupResources : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [field: SerializeField] public Inventory Inventory { get; private set; }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        ResourcePickup pickup = collision.gameObject.GetComponent<ResourcePickup>();
+
+        if (pickup)
+        {
+            Inventory.AddResources(pickup.ResourceType, 1);
+            Destroy(pickup.gameObject);
+        }
     }
 }

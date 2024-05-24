@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    [field: SerializeField] private SerializableDictionary<Resource, int> Resources { get; private set; }
+    [field: SerializeField] private SerializableDictionary<Resource, int> Resources { get; set; }
 
     public int GetResourceCount(Resource type)
     {
@@ -20,6 +20,15 @@ public class Inventory : MonoBehaviour
 
     public int AddResources(Resource type, int count)
     {
-       return Resources[type] += count;
+       if (Resources.TryGetValue(type, out int currentCount))
+        {
+            return Resources[type] += count;
+        }
+        else
+        {
+            Resource.Add(type, count);
+            return count;
+        }
+       
     }
 }
