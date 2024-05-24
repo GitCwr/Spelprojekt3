@@ -26,7 +26,7 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            Resource.Add(type, count);
+            Resources.Add(type, count);
             return count;
         }
        

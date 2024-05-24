@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 32125882091176814}
   - component: {fileID: 8768859037483095707}
   - component: {fileID: 5653362875128705691}
+  - component: {fileID: 122121205720250033}
   m_Layer: 0
   m_Name: HarvestableObject
   m_TagString: Untagged
@@ -3807,7 +3808,7 @@ ParticleSystem:
     inside: 0
     outside: 1
     enter: 0
-    exit: 0
+    exit: 2
     colliderQueryMode: 0
     radiusScale: 1
     primitives:
@@ -4862,12 +4863,25 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.44}
   serializedVersion: 2
   m_Radius: 1.46
+--- !u!114 &122121205720250033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7030326285441071445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e94c8485380ceb4d9d2ca14a9ec4353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObjectPrefab>k__BackingField: {fileID: 0}
 --- !u!1001 &4929123723194672179
 PrefabInstance:
   m_ObjectHideFlags: 0
