@@ -1380,9 +1380,21 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 5614239114812195262, guid: 736ec4b724f3cb645aeb97cbd56130b5, type: 3}
+      propertyPath: <GravitySpeed>k__BackingField
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6208112797483548625, guid: 736ec4b724f3cb645aeb97cbd56130b5, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260813005773249302, guid: 736ec4b724f3cb645aeb97cbd56130b5, type: 3}
+      propertyPath: m_Radius
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7375039787545423938, guid: 736ec4b724f3cb645aeb97cbd56130b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
