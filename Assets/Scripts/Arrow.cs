@@ -20,8 +20,9 @@ public class Arrow : MonoBehaviour
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }
 
     

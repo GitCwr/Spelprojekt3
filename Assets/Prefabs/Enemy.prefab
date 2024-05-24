@@ -173,9 +173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRb: {fileID: 4636235226695318893}
-  speed: 5
+  speed: 4
   damage: 25
-  maxHealth: 100
+  maxHealth: 50
 --- !u!95 &8512609472552710321
 Animator:
   serializedVersion: 5
